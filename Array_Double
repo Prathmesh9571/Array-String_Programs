@@ -1,0 +1,26 @@
+//Created a Java program to take Double type value of array size is 10 and Print By its Index value 
+//(While Giving a Index value Make sure However Length indexing is -1).
+package Array_Programs;
+import java.util.Scanner;
+public class Array_Double 
+{
+	public static void main(String[] args) 
+{
+		Scanner sc=new Scanner(System.in);
+		Double a[]=new Double[sc.nextInt()];
+		a[0]=10.5;
+		a[1]=90.90;
+		a[2]=5.20;
+		a[3]=85.85;
+		a[4]=45.45;
+		a[5]=100.25;
+		a[6]=88.99;
+		a[7]=54.46;
+		a[8]=36.45;
+		a[9]=50.2;
+		for(int i=0; i<10-1;i++)
+		{
+			System.out.println(a[i]);	
+		}
+	}
+}
