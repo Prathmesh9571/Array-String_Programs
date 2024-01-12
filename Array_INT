@@ -1,0 +1,26 @@
+//Created a Java program to take Int type value of array size is 10 and Print By its Index value 
+//(While Giving a Index value Make sure However Length indexing is -1).
+package Array_Programs;
+import java.util.Scanner;
+public class Array_INT
+{
+	public static void main(String[] args) 
+  {
+		Scanner sc=new Scanner(System.in);
+		int a[]=new int[sc.nextInt()];
+		a[0]=100;
+		a[1]=200;
+		a[2]=300;
+		a[3]=400;
+		a[4]=500;
+		a[5]=600;
+		a[6]=700;
+		a[7]=800;
+		a[8]=900;
+		a[9]=1000;
+		for(int i=0; i<=10-1;i++)
+		{
+			System.out.println(a[i]);	
+		}
+	}
+}
