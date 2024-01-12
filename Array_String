@@ -1,0 +1,28 @@
+//Created a Java program to take String type value of array size is 12 and Print By its Index value 
+//(While Giving a Index value Make sure However Length indexing is -1).
+package Array_Programs;
+import java.util.Scanner;
+public class Array_String
+{
+	public static void main(String[] args) 
+  {
+		Scanner sc=new Scanner(System.in);
+		String a[]=new String[sc.nextInt()];
+		a[0]="January";
+		a[1]="February";
+		a[2]="March";
+		a[3]="April";
+		a[4]="May";
+		a[5]="June";
+		a[6]="Jully";
+		a[7]="August";
+		a[8]="September";
+		a[9]="October";
+    a[10]="November";
+    a[11]="December";
+		for(int i=0; i<=12-1;i++)
+		{
+			System.out.println(a[i]);	
+		}
+	}
+}
