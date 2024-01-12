@@ -1,0 +1,26 @@
+//Created a Java program to take Boolean type value of array size is 10 and Print By its Index value 
+//(While Giving a Index value Make sure However Length indexing is -1).
+package Array_Programs;
+import java.util.Scanner;
+public class Array_Boolean
+{
+	public static void main(String[] args) 
+  {
+		Scanner sc=new Scanner(System.in);
+		boolean a[]=new boolean[sc.nextInt()];
+		a[0]=true;
+		a[1]=false;
+		a[2]=false;
+		a[3]=true;
+		a[4]=true;
+		a[5]=true;
+		a[6]=true;
+		a[7]=true;
+		a[8]=true;
+		a[9]=false;
+		for(int i=0; i<=10-1;i++)
+		{
+			System.out.println(a[i]);	
+		}
+	}
+}
