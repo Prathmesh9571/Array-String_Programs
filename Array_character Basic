@@ -1,0 +1,26 @@
+//Created a Java program to take Character type value of array size is 10 and Print Characters By its Index value 
+//(While Giving a Index value Make sure However Length indexing is -1).
+package Array_Programs;
+import java.util.Scanner;
+public class Array_Character_Ex
+{
+	public static void main(String[] args) 
+  {
+		Scanner sc=new Scanner(System.in);
+		char a[]=new char[sc.nextInt()];
+		a[0]=']';
+		a[1]='!';
+		a[2]='`';
+		a[3]='!';
+		a[4]='~';
+		a[5]='@';
+		a[6]='$';
+		a[7]='+';
+		a[8]='=';
+		a[9]='^';
+		for(int i=0; i<10-1;i++)
+		{
+			System.out.println(a[i]);	
+		}
+	}
+}
