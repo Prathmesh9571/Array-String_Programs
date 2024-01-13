@@ -1,0 +1,27 @@
+// These Program is Devloped for Taking Character And Check That Char Is Even-Odd(_By ASCII- Value_)
+package Array_Programs;
+import java.util.*;
+public class Array_CharEvenOdd 
+{
+	public static void main(String[] args) 
+	{		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a The Size Of Storing the Elements");
+		char Char_arr []= new char[sc.nextInt()];
+				System.out.println("Enter a The Elements In Int Arrray");
+				//Taking the elements in char array from user
+				for(int i=0;i<=Char_arr.length-1;i++)
+				{
+					Char_arr[i]=sc.next().charAt(0);
+				}
+				int count=0;
+				for (int i=0;i<=Char_arr.length-1;i++)
+				{
+				String Msg=Char_arr[i]%2==0?(count++)+"The Value at:- "+i+" index is = " +Char_arr[i]+" Its a Even Character":"The Value at:- "+i+" index is = " +Char_arr[i]+ " Its a Odd Character";
+				System.out.println(Msg);
+				}
+				System.out.println("Total Value Are:-" +count);
+	}
+}
+
+		
