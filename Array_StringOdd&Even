@@ -4,32 +4,25 @@ public class Array_StringOddEven
 {
 	public static void main(String[] args)
 	{
-				Scanner sc=new Scanner(System.in);
-				System.out.println("Enter a The Size Of Storing the Elements");
-			String String_arr []= new String[sc.nextInt()];
-				System.out.println("Enter a The Elements In String Arrray");
-				//Taking the elements in char array from user
-				for(int i=0;i<=String_arr.length-1;i++)
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a The Size Of Storing the Elements");
+		String String_arr []= new String[sc.nextInt()];
+		System.out.println("Enter a The Elements In String Arrray");
+		//Taking the elements in char array from user
+			for(int i=0;i<=String_arr.length-1;i++)
 				{
 					String_arr[i]=sc.nextLine();
 				}
-				//Printing the char elements
-				int count=0;
-				for (int i=0;i<=String_arr.length-1;i++)
+			//Printing the char elements
+			int count=0;
+			for (int i=0;i<=String_arr.length-1;i++)
 				{
-					if(String_arr[i].length()%2==0)
-					{	
-					System.out.println("The Value at:- "+i+" index is = " +String_arr[i]+" Its a Even Number");
-					count++;
-					}
-					else
-					{
-					System.out.println("The Value at:- "+i+" index is = " +String_arr[i]+ "Its a Odd Number");
-					}
+String result=String_arr[i].length()%2==0?"The Value at:-" +i+ " index is = " +String_arr[i]+ " Its a Even Number ":"The Value at:- "+i+" index is = " +String_arr[i]+ "Its a Odd Number";
+				count++;
+				System.out.println(result);
 				}
-				System.out.println("Total Vowels Are:-" +count);
+				System.out.println("Total Value Are:-" +count);
 			}
-
 		}
 
 
