@@ -1,0 +1,31 @@
+// This Java Program is design to Take Elements In Array And Find Out The Element Are Even Or Odd.
+package Array_Programs;
+import java.util.Scanner;
+public class Array_OddEven
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a The Size Of Storing the Elements");
+		int int_arr []= new int[sc.nextInt()];
+		System.out.println("Enter a The Elements In Int Arrray");
+		//Taking the elements in int array from user
+		for(int i=0;i<=int_arr.length-1;i++)
+		{
+			int_arr[i]=sc.nextInt();
+		}
+		for (int i=0;i<=int_arr.length-1;i++)
+		{
+			if(int_arr[i]%2==0)
+			{	
+			System.out.println("The Value at:- "+i+" index is = " +int_arr[i]+"Its a Even Number");
+			}
+			else
+			{
+			System.out.println("The Value at:- "+i+" index is = " +int_arr[i]+"Its a Odd Number");
+			}
+		}
+	}
+
+}
