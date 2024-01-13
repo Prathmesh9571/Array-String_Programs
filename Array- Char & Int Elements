@@ -1,0 +1,39 @@
+package Array_Programs;
+import java.util.*;
+public class Array_12 {
+
+	public static void main(String[] args) 
+{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a The Size Of Storing the Elements");
+		char char_arr []= new char[sc.nextInt()];
+
+		System.out.println("Enter a The Elements In Character Arrray");
+		//Taking the elements in char array from user
+		for(int i=0;i<=char_arr.length-1;i++)
+		{
+			char_arr[i]=sc.next().charAt(0);
+		}
+
+		System.out.println("Enter a The Size Of Storing the Elements");
+		int int_arr []= new int[sc.nextInt()];
+
+		System.out.println("Enter a The Elements In Int Arrray");
+		//Taking the elements in int array from user
+		for(int i=0;i<=int_arr.length-1;i++)
+		{
+			int_arr[i]=sc.nextInt();
+		}
+		//Printing the Int elements
+		for (int i=0;i<=int_arr.length-1;i++)
+		{
+			System.out.println("The Value at:- "+i+" index is = " +int_arr[i]);
+		}
+		//Printing the char elements
+				for (int i=0;i<=char_arr.length-1;i++)
+				{
+					System.out.println("The Value at:- "+i+" index is = " +char_arr[i]);
+				}
+	}
+
+}
