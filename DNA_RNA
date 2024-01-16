@@ -1,0 +1,37 @@
+//These java Program Specifiacally design to the Bit in Elements Like {000101011010,111101011010,000101011010,111101011010} Define as DNA=000,RNA=111(Starting Three Numbers Of index Element);
+package Array_Programs;
+class Dna_Rna
+{
+String dna[]={"1110001101101","0001110101010","0001110101010","11111110101010"};
+	public static void main(String[] args)
+	{
+		Dna_Rna ref= new Dna_Rna();
+		ref.dna_rna();
+	}
+	public  void dna_rna()
+	{
+		array:for(int i=0;i<dna.length;i++)//outer for(array)
+	{
+	String concat="";
+	str1:for (int j=0;j<3;j++)//inner for(str1)
+	{	
+		if (dna[i].charAt(j)=='0'||dna[i].charAt(j)=='1')
+		{
+			concat=concat+dna[i].charAt(j);
+		}
+	}//inner for(str1)
+	if(concat.equals("000"))
+	{
+		System.out.println("DNA");
+	}
+	else if(concat.equals("111"))
+	{
+		System.out.println("RNA");	
+	}
+	else
+	{
+		System.out.println("not valid info");
+	}
+}
+}
+}
