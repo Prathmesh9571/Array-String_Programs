@@ -1,0 +1,39 @@
+// write a program in java to create int an array of size 10 ,take all elements input from user and divide 5th elements with all index value 
+package Array_Programs;
+
+import java.util.Scanner;
+
+public class array_Divide5thElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		try{
+		System.out.println("Enter a The Size Of Storing the Elements");
+		int int_arr []= new int[sc.nextInt()];
+		System.out.println("Enter a The Elements In Int Arrray");
+		//Taking the elements in int array from user
+		for(int i=0;i<=int_arr.length-1;i++)
+		{
+			int_arr[i]=sc.nextInt();
+		}
+		//Printing the Int elements
+		for (int i=0;i<=int_arr.length-1;i++)
+		{
+			if (int_arr[i]%int_arr[5]==0) {
+				System.out.println("The Value at:- "+i+" index is = " +int_arr[5]+"Its a Divide Successfuly!!!");
+			}
+			else
+			{
+				System.out.println("Not Divisible");
+			}
+		}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}
