@@ -1,0 +1,49 @@
+package Qspider;
+import java.util.Scanner;
+public class Check_StringValuePresentOrNot2
+{
+	static String String_arr []= new String[4];
+	public static void main(String[] args) 
+	{
+		 Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a String which you want to match:-");
+		String name=sc.next();
+		
+		
+		System.out.println("Enter a The Elements In String Arrray");
+		//Taking the elements in char array from user
+		for(int i=0;i<String_arr.length-1;i++)
+		{
+			String_arr[i]=sc.next();
+		}
+		
+		int b1= Match_String(name);
+		
+		if(b1>=0)
+		{
+			System.out.println("result is "+b1);
+		}
+		else
+		{
+			System.out.println("Elements are Not Found");
+		}
+		//Printing the char elements
+	
+		}
+	public static int Match_String(String name )
+	{
+		
+		for(int i=0;i<String_arr.length;i++)
+		{
+			if(String_arr[i].equals(name))
+			{
+				return i;
+			}
+		}
+		return-1;
+		
+
+}
+}
+
+
