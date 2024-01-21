@@ -1,0 +1,21 @@
+//Array of char concat the string 
+package Array_Programs;
+import java.util.Scanner;
+public class Array_Concat_String 
+{
+	static String store=null;
+	public static void main(String[] args) {
+				System.out.println(Array_Concat_String.method());
+		}
+//using method calling the char into string concat 
+			public static String method()
+			{
+				//String store=null;
+				char name[]= {'a','b','c','d','e','f'};
+				for (int i=0;i<name.length;i++)
+				{
+					store=store+name[i];
+				}
+				return store;
+			}
+}
