@@ -1,0 +1,25 @@
+//Write a Java program to remove the third element from an array list.
+package ExtrawPrograms;
+import java.util.*;
+public class Remove_ElementArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList ref= new ArrayList();
+		ref.add(1);
+		ref.add(5);
+		ref.add(4);
+		ref.add(5);
+		ref.add(7);
+		ref.add(8);
+		ref.add(9);
+		ref.add(10);
+		ref.add(12);
+		ref.add(12);
+		ref.add(55);
+		//Removing the element 3
+		ref.remove(3);
+System.out.println(ref);
+	}
+
+}
