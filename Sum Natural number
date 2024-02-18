@@ -1,0 +1,27 @@
+package String_Programs;
+
+import java.util.Scanner;
+
+public class NthSumNaturalNumber {
+int sum;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		Creating Object
+		NthSumNaturalNumber ref=new NthSumNaturalNumber();
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter a Number:-");
+		int num=scanner.nextInt();
+		System.out.println("The Sum Of valu is:-"+ref.add(num));
+	}
+	int add(int n)
+	{
+		 sum+=n;0
+		if(n>0)
+		{
+			n--;
+			add(n);
+		}
+		return sum;
+	}
+}
