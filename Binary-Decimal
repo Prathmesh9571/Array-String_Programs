@@ -1,0 +1,12 @@
+package String_Programs;
+
+public class ValueOf_radix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Integer ref = Integer.valueOf("10101" ,2);
+	        System.out.println("Decimal equivalent: " + ref);
+		}
+	}
+
+
