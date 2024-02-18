@@ -1,0 +1,22 @@
+package String_Programs;
+
+public class Var_Args {
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Var_Args ref=new Var_Args();
+		ref.m1(45,54,64);
+	}
+	public void m1(int ...a)
+	{
+		
+		System.out.println(a.length);
+//		Using for each loop
+		 for (int i : a)
+		        System.out.print(i + " ");
+	}
+}
+
+
+
