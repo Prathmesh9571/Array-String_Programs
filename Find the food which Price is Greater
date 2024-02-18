@@ -1,0 +1,34 @@
+package ExtrawPrograms;
+
+import java.util.Arrays;
+
+public class FoodObj {
+    String food;
+    int price;
+    double quantity;
+    String feedback;
+
+    FoodObj(String food, int price, double quantity, String feedback) {
+        this.food = food;
+        this.price = price;
+        this.quantity = quantity;
+        this.feedback = feedback;
+    }
+
+    public static void main(String[] args) {
+
+        FoodObj ref1 = new FoodObj("Pavbhaji", 40, 0.5, "Good");
+        FoodObj ref2 = new FoodObj("Paneer", 60, 1, "veryGood");
+        FoodObj ref3 = new FoodObj("ButterChicken", 120, 3, "Yummy");
+        Object ref[] = {ref1, ref2, ref3};
+        Object price1[] = new Object[ref.length];
+
+        for (int i = 0; i < price1.length; i++) {
+            FoodObj ref4 = (FoodObj) ref[i];
+            price1[i] = ref4.price;
+        }
+
+        Arrays.sort(price1);
+        System.out.println(price1[price1.length - 1]);
+    }
+}
