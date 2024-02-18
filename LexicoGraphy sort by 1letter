@@ -1,0 +1,23 @@
+package String_Programs;
+
+import java.util.*;
+
+public class Lexicography {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 String arr[] = {"suraj","prathm","atul","chameli","Julie","shila" };  
+		  
+		        Arrays.sort(arr,String.CASE_INSENSITIVE_ORDER);  
+		        printArray(arr);  
+
+	}
+	 public static void printArray(String str[])  
+	    {  
+	        for (String string : str)  
+	            System.out.print(string + " ");  
+	        System.out.println();  
+	    }  
+
+  
+}  
