@@ -1,0 +1,25 @@
+package String_Programs;
+
+public class Reverse_NumString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int start=100;
+		int end=300;
+		Reverse_NumString ref2=new Reverse_NumString();
+		for(;start<=end;start++)
+		{
+			System.out.println(ref2.reversenum(start));
+		}
+	}
+	int reversenum(int a) 
+	{
+		String value=a+"";
+		StringBuffer refv=new StringBuffer(value);
+		StringBuffer ref1=refv.reverse();
+		String value1=ref1.toString();
+		Integer ref=new Integer(value1);
+		int result=ref.intValue();
+		return result;
+	}
+}
