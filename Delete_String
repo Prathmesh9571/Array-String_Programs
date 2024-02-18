@@ -1,0 +1,21 @@
+package String_Programs;
+
+public class String_Delete {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub\ 
+		String busnum="MH-12";
+		String pincode="144043";
+		
+		//Concatination using String:concat method
+		String concat=busnum.concat(pincode);
+		
+		StringBuilder ref=new StringBuilder(concat);
+		System.out.println(concat);
+//		concat both the length
+		int length=concat.length();
+		int	b=busnum.length();
+		ref.delete(b,length);
+		System.out.println(ref);
+	}
+}
