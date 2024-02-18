@@ -1,0 +1,28 @@
+package Array_Programs;
+import java.util.*;
+public class UserElementInArrayCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Object[] Arr = {"Prathm", 42, 'B', 3.14};
+        Object Element = 'A';
+
+        if (isPresent(Element, Arr)) 
+        {
+            System.out.println(Element + " is present in the array.");
+        } else
+        {
+            System.out.println(Element + " is not present in the array.");
+        }
+
+	}
+	public static boolean isPresent(Object element, Object[] array) {
+        for (Object obj : array) {
+            if (obj.equals(element)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+}
