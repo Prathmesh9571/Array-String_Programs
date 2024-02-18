@@ -1,0 +1,41 @@
+//write a program in java to reverse a List and Check if Alternate value of List is Alphabet Or Not
+package ExtrawPrograms;
+import java.util.*;
+public class Reverse_AlternateCheckAlphabet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Create Linked list
+		LinkedList ref=new LinkedList();
+		
+		//Using Add Method Adding The Elements
+		ref.add('@');
+		ref.add('A');
+		ref.add('7');
+		ref.add('a');
+		ref.add('b');
+		ref.add('e');
+		ref.add('d');
+		ref.add('f');
+		ref.add('1');
+		ref.add(',');
+		ref.add('_');
+		ref.add('$');
+		//Reverse the elements using Collections.reverse
+		Collections.reverse(ref);
+		System.out.println(ref);
+		
+		for(int i=0;i<ref.size();i=i+2)
+		{
+			char a=(char)ref.get(i);
+			int b=a;
+			if((b>=65&&b<=90)||(b>=97&&b<=127))
+			{
+				System.out.println("It is an alphabet:-"+a);
+			}
+		}
+	            
+		
+	}
+
+}
