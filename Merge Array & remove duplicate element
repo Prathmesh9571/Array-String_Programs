@@ -1,0 +1,33 @@
+//Write a program to merge two list and remove all duplicate element(comman element between second list).
+package ExtrawPrograms;
+import java.util.*;
+public class Merge_RemoveDuplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList ref=new ArrayList();
+		ref.add(1);
+		ref.add(2);
+		ref.add(2);
+		ref.add(4);
+		ref.add(8);
+		
+		ArrayList ref1=new ArrayList();
+		//ref1.addAll(ref);
+		ref1.add(2);
+		ref1.add(5);
+		ref1.add(6);
+		ref1.add(4);
+		ref1.add(9);
+		//ref.removeAll()
+System.out.println(ref1);
+		ref1.removeAll(ref);
+		
+			System.out.println(ref1);
+		
+			ref.addAll(ref1);
+			System.out.println(ref);	
+	}
+
+}
